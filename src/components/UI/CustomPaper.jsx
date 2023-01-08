@@ -13,6 +13,7 @@ const CustomPaper = ({ children, sx = {}, paperSx = {}, ...otherProps }) => {
         ...paperSx,
       }}
     >
+      {/* just to config email */}
       <Box sx={{ px: 3, py: 2, ...sx }} {...otherProps}>
         {children}
       </Box>
