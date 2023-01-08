@@ -2,7 +2,7 @@ import { Paper } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
-const CustomPaper = ({ children, sx, paperSx = {}, ...otherProps }) => {
+const CustomPaper = ({ children, sx = {}, paperSx = {}, ...otherProps }) => {
   return (
     <Paper
       elevation={0}
@@ -13,7 +13,7 @@ const CustomPaper = ({ children, sx, paperSx = {}, ...otherProps }) => {
         ...paperSx,
       }}
     >
-      <Box sx={{ p: 2, ...sx }} {...otherProps}>
+      <Box sx={{ px: 3, py: 2, ...sx }} {...otherProps}>
         {children}
       </Box>
     </Paper>

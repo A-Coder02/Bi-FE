@@ -1,4 +1,3 @@
-import { BarChart } from "@mui/icons-material";
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import CustomPaper from "../UI/CustomPaper";
@@ -10,6 +9,8 @@ import RoomsPng from "../../assets/images/rooms.png";
 import FbPng from "../../assets/images/f&b.png";
 import OodPng from "../../assets/images/ood.png";
 import TrPng from "../../assets/images/tr.png";
+
+import BarChart from "../../components/graphs/BarChart";
 
 const DATA1 = [
   { id: 1, img: RoomsPng, name: "Rooms" },
@@ -31,14 +32,14 @@ const DailyReport = () => {
           title={
             <Typography variant="h4">
               64.43%
-              <Typography variant="h5" component="span">
+              <Typography variant="h5" component="span" fontWeight={"300"}>
                 {" "}
                 Occupancy by percentage
               </Typography>
             </Typography>
           }
           subTitle={
-            <Typography fontWeight="400">
+            <Typography fontWeight="300">
               Occupancy rate is{" "}
               <Typography component="span" color="primary.light">
                 {" "}
@@ -58,14 +59,14 @@ const DailyReport = () => {
           title={
             <Typography variant="h4">
               12,034 AED
-              <Typography variant="h5" component="span">
+              <Typography variant="h5" component="span" fontWeight={"300"}>
                 {" "}
                 Average Daily Rate
               </Typography>
             </Typography>
           }
           subTitle={
-            <Typography fontWeight="400">
+            <Typography fontWeight="300">
               Average Daily rate is
               <Typography component="span" color="primary.light">
                 {" "}

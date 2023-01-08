@@ -11,6 +11,7 @@ const CustomAccordion = ({ header, children, title }) => {
       defaultExpanded={true}
       component="div"
       sx={{
+        mb: 2,
         background: "none",
         boxShadow: "none",
         "&.Mui-expanded": {

@@ -13,7 +13,7 @@ const ReportCard2 = ({ title, subTitle, value }) => {
         color: "white",
       }}
       component={Stack}
-      spacing={2}
+      spacing={4}
     >
       {title}
       {subTitle}
